@@ -1,42 +1,34 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Calendar } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Calendar } from "lucide-react";
+import { useInView } from "react-intersection-observer";
 
 const experiences = [
   {
-    period: "2020 - Present",
-    role: "Senior Video Editor",
-    company: "Creative Minds Studio",
-    description: "Lead editor for major brand campaigns and documentary projects. Managed a team of junior editors and established post-production workflows.",
+    period: "11/2021 - 05/2024",
+    role: "Senior Cine Editor",
+    company: "Dream Weaver",
+    description:
+      "Shoot in a variety of styles in different lighting and locations following client shot list requests. Think creatively. Collaborate with our in-house creative team to perform any additional creative filming to enhance their story.",
     achievements: [
-      "Edited award-winning documentary series 'Nature's Whispers'",
-      "Increased studio's commercial client base by 40%",
-      "Implemented new color grading pipeline"
-    ]
+      "Developing storyboards based on the script",
+      "Enhancing animation with special effects at post-production stage",
+      "The ability to listen to and understand information and ideas required by our clients",
+      "Take artistic criticism from our in-house creative team",
+    ],
   },
   {
-    period: "2017 - 2020",
-    role: "Video Editor",
-    company: "Digital Arts Agency",
-    description: "Specialized in music videos and commercial content. Collaborated with international artists and brands.",
+    period: "02/2021 – 11/2021",
+    role: "Chief Video Editor",
+    company: "Dterms Ltd",
+    description:
+      "Creating promotional videos by assembling recorded footage into a finished project that matches director’s vision and is suitable for publishing. Creating 2D/3D animation movements for websites, facebook and advertisements",
     achievements: [
-      "Edited 50+ music videos with 1M+ views",
-      "Developed innovative transition techniques",
-      "Trained junior editors in advanced editing techniques"
-    ]
+      "Developing storyboards based on the script",
+      "Enhancing animation with special effects at post-production stage",
+      "Making videos that promote a company’s products, services, and/or business",
+      "Interviewing people and creating a film clip via editing raw footage",
+    ],
   },
-  {
-    period: "2015 - 2017",
-    role: "Junior Editor",
-    company: "MediaCraft Productions",
-    description: "Started as assistant editor and quickly promoted to independent project handling.",
-    achievements: [
-      "Managed post-production for corporate clients",
-      "Specialized in event highlight videos",
-      "Learned advanced color grading techniques"
-    ]
-  }
 ];
 
 export default function Experience() {
@@ -67,21 +59,26 @@ export default function Experience() {
               className="relative pl-8 border-l-2 border-blue-500"
             >
               <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-blue-500" />
-              
+
               <div className="bg-gray-900/50 backdrop-blur-sm p-6 rounded-lg">
                 <div className="flex items-center gap-2 text-blue-400 mb-2">
                   <Calendar className="w-4 h-4" />
                   <span>{exp.period}</span>
                 </div>
-                
-                <h3 className="text-xl font-bold text-white mb-1">{exp.role}</h3>
+
+                <h3 className="text-xl font-bold text-white mb-1">
+                  {exp.role}
+                </h3>
                 <h4 className="text-gray-400 mb-4">{exp.company}</h4>
-                
+
                 <p className="text-gray-300 mb-4">{exp.description}</p>
-                
+
                 <ul className="space-y-2">
                   {exp.achievements.map((achievement, i) => (
-                    <li key={i} className="text-gray-400 flex items-start gap-2">
+                    <li
+                      key={i}
+                      className="text-gray-400 flex items-start gap-2"
+                    >
                       <span className="text-blue-400 mt-1">•</span>
                       {achievement}
                     </li>

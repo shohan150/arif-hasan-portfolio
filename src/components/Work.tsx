@@ -2,35 +2,35 @@ import { motion } from "framer-motion";
 import { Play, X } from "lucide-react";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import img1 from "../assets/1.jpg";
+import img2 from "../assets/2.jpg";
+import img3 from "../assets/3.jpg";
+import img4 from "../assets/4.png";
 
 const projects = [
   {
-    title: "Brand Campaign - Urban Lifestyle",
-    category: "Commercial",
-    thumbnail:
-      "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&q=80&w=2000",
+    title: "Beauty of Bangladesh",
+    category: "Nature",
+    thumbnail: img1,
     youtubeUrl: "https://www.youtube.com/embed/_GP1zyZZcCE",
   },
   {
-    title: "Nature Documentary Series",
-    category: "Documentary",
-    thumbnail:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2000",
-    youtubeUrl: "https://www.youtube.com/embed/ksrervXMEwc",
+    title: "Explore Tanguar Haor",
+    category: "Travel",
+    thumbnail: img2,
+    youtubeUrl: "https://www.youtube.com/embed/0b15dWv67eA",
   },
   {
-    title: "Music Video - 'Ethereal Dreams'",
-    category: "Music Video",
-    thumbnail:
-      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&q=80&w=2000",
-    youtubeUrl: "https://www.youtube.com/embed/ksrervXMEwc",
+    title: "Aqib X Tujana Wedding",
+    category: "Wedding",
+    thumbnail: img3,
+    youtubeUrl: "https://www.youtube.com/embed/Zpj6SfxbS4E",
   },
   {
-    title: "Corporate Event Highlights",
-    category: "Event",
-    thumbnail:
-      "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000",
-    youtubeUrl: "https://www.youtube.com/embed/ksrervXMEwc",
+    title: "Corporate Advertising",
+    category: "Promotion",
+    thumbnail: img4,
+    youtubeUrl: "https://www.youtube.com/embed/mqFpQ337vGs",
   },
 ];
 

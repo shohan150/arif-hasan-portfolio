@@ -1,29 +1,28 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { GraduationCap, Award } from 'lucide-react';
+import { motion } from "framer-motion";
+import { GraduationCap } from "lucide-react";
+import { useInView } from "react-intersection-observer";
 
 const education = [
   {
-    degree: "Master of Arts in Film and Media Production",
-    school: "New York Film Academy",
-    period: "2013 - 2015",
-    achievements: [
-      "Specialized in Post-Production",
-      "Best Thesis Film Award",
-      "Student Film Festival Winner"
-    ]
+    degree: "B.Sc in Computer Science & Engineering",
+    school: "Jahangirnagar University",
+    period: "11/2017 – 02/2019 (drop-out)",
+    // achievements: [
+    //   "Specialized in Post-Production",
+    //   "Best Thesis Film Award",
+    //   "Student Film Festival Winner"
+    // ]
   },
   {
-    degree: "Bachelor of Fine Arts in Digital Media",
-    school: "University of Creative Arts",
-    period: "2009 - 2013",
-    achievements: [
-      "Dean's List all semesters",
-      "Advanced Video Editing Certificate",
-      "Digital Arts Excellence Award"
-    ]
-  }
+    degree: "Higher Secondary Certificate",
+    school: "Mirpur Bangla School & College",
+    period: "01/2015 – 11/2017",
+    // achievements: [
+    //   "Dean's List all semesters",
+    //   "Advanced Video Editing Certificate",
+    //   "Digital Arts Excellence Award"
+    // ]
+  },
 ];
 
 export default function Education() {
@@ -62,14 +61,14 @@ export default function Education() {
                 </div>
               </div>
 
-              <div className="space-y-3">
+              {/* <div className="space-y-3">
                 {edu.achievements.map((achievement, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <Award className="w-4 h-4 text-blue-400 flex-shrink-0" />
                     <span className="text-gray-300">{achievement}</span>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </motion.div>
           ))}
         </div>
